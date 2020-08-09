@@ -4,6 +4,7 @@
 
 #include "Sprite.h"
 #include "StateMachine.h"
+#include "TreeNode.h"
 
 class Plane final : public Sprite
 {
@@ -21,9 +22,12 @@ public:
 private:
 	void m_buildAnimations();
 
+	TreeNode* m_root;
+	void m_buildDecisionTree();
+
 	float m_angle;
 
-	StateMachine m_stateMachine;
+	StateMachine m_brain;
 
 	void m_checkCurrentConditions();
 

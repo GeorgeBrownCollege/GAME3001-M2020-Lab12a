@@ -24,20 +24,6 @@ void StartScene::update()
 
 void StartScene::clean()
 {
-	std::cout << "Clean called on StartScene" << std::endl;
-	
-	delete m_pStartLabel;
-	m_pStartLabel = nullptr;
-	
-	delete m_pInstructionsLabel;
-	m_pInstructionsLabel = nullptr;
-
-	delete m_pShip;
-	m_pShip = nullptr;
-
-	delete m_pStartButton;
-	m_pStartButton = nullptr;
-
 	removeAllChildren();
 }
 
